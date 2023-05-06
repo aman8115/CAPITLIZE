@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>UPPERCASE</title>
+</head>
+<body>
+    <!-- HTML CODE -->
+   <div class="container">
+    <label for="Name"> Name</label> 
+    <input type="text" name="username " id="name" placeholder="Enter your name "> 
+    <label for=" skills ">skill</label>
+    <input type="your Skills" name="userskills" id="skill"  placeholder="Enter your skills ">
+    <input type="button" value="submit">
+     </div>
+       
+        
+      <!-- JAVASCRIPT CODE -->  
+           
+    <script>
+        
+       let up = document.getElementById("name")
+    
+       up.addEventListener("input",() =>{
+        up.value = up.value.toUpperCase()
+       
+       }) 
+
+       let upp = document.getElementById("skill")
+       upp.addEventListener("input",()=>{
+        upp.value = upp.value.toUpperCase()
+       })
+       
+    </script>
+</body>
+</html>
